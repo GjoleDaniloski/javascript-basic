@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Dynamic Table</title>
+    <style>
+        #tinputRowColumn {
+            width: 500px;
+        }
+        #tinputRowColumn td, th {
+            border: 1px solid #000;
+            padding: 10px;   
+        }
+        #CreateTable {
+            margin: 20px 0;
+            height: 35px;
+            width: 300px;
+
+        }
+        #tableRowColumn {
+        border: 1px solid #000;
+        display:none;  
+        }
+        #tableRowColumn tr td {
+        border: 1px solid #000;
+        }
+        </style>
+</head>
+<body>
+    <table id="tinputRowColumn">
+	
+        <thead>
+
+			<tr>
+				<th>Create a Table</th>
+            </tr>
+
+            <tr>
+				<th>Number of Row: <br /> <input id="inputRow"></th>
+				
+            </tr>
+            
+            <tr>
+				<th>Number of Column: <br /><input id="inputColumn"></th>
+				
+            </tr>
+            
+        </thead>
+		
+    </table>
+
+    <button id="CreateTable">Create a table</button>
+
+    <table id="tableRowColumn">
+	
+	</table>
+
+    <script src="script.js"></script>
+</body>
+</html>
